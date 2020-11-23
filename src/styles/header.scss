@@ -39,9 +39,11 @@
       display: inline-block;
       height: 100%;
       text-transform: uppercase;
+      transition: color 0.5s;
 
       &:hover {
         color: $blue;
+        transition: color 0.5s;
       }
     }
 

@@ -12,8 +12,9 @@
     @include flex-column;
     align-items: center;
     width: 200px;
-    padding: 30px 14px 15px;
+    padding: 16px 14px 15px;
     border: 1px solid #f3f3f3;
+    border-radius: 4px;
     margin-bottom: 50px;
 
     &__wrapper {
@@ -21,8 +22,19 @@
     }
 
     &__img {
-      width: 160px;
-      height: 134px;
+      width: 166px;
+      height: 164px;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 12px 0;
+      border: 3px solid transparent;
+      border-radius: 4px;
+      transition: transform 1s;
+      &:hover {
+        transform: scale(1.2);
+        border-color: #f3f3f3;
+        transition: transform 1s;
+      }
     }
 
     &__button {
@@ -38,10 +50,12 @@
       text-transform: uppercase;
       border: 1px solid $blue;
       border-radius: 4px;
+      transition: background-color 0.5s, color 0.5s;
 
       &:hover {
         background-color: #ffff;
         color: $blue;
+        transition: background-color 0.5s, color 0.5s;
       }
     }
   }
