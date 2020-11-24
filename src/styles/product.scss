@@ -2,14 +2,26 @@
   @include flex-column;
   align-items: center;
   width: 200px;
-  padding: 30px 14px 15px;
+  padding: 16px 14px 15px;
   border: 1px solid #f3f3f3;
   border-radius: 4px;
 
   &__image {
-    width: 160px;
-    height: 134px;
-    margin-bottom: 45px;
+    display: flex;
+    margin-bottom: 20px;
+    width: 166px;
+    height: 164px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12px 0;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: #f3f3f3;
+    }
   }
 
   &__desc {
@@ -28,6 +40,7 @@
     background-color: $blue;
     border: 1px solid $blue;
     border-radius: 5px;
+    transition: color 1s, background-color 1s;
 
     &:hover {
       color: $blue;
