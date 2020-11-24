@@ -33,7 +33,6 @@
       &:hover {
         transform: scale(1.2);
         border-color: #f3f3f3;
-        transition: transform 1s;
       }
     }
 
@@ -50,12 +49,11 @@
       text-transform: uppercase;
       border: 1px solid $blue;
       border-radius: 4px;
-      transition: background-color 0.5s, color 0.5s;
+      transition: background-color 0.5s, color 2s;
 
       &:hover {
         background-color: #ffff;
         color: $blue;
-        transition: background-color 0.5s, color 0.5s;
       }
     }
   }
