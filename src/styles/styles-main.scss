@@ -3,18 +3,13 @@
   justify-content: center;
 
   &__wrapper {
-    @include flex-btw;
-    flex-wrap: wrap;
-    max-width: ($product-width * 4) + ($product-margin * 3);
-
-    @media (max-width: 1020px) {
-      justify-content: space-around;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-evenly;
+    width: ($product-width * 4) + ($product-margin * 3);
+    grid-gap: 50px 45px;
   }
 
-  &__product {
-    margin-bottom: $main-indent;
-  }
   &__heading {
     position: absolute;
     clip: rect(0 0 0 0);
